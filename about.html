@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv= "X-UA-Compatible" content ="IE=edge">
+    <meta name="viewport" content = "width=device-width,initial-scale=1">
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <title>Police Shootings</title>
+</head>
+
+<body>
+<nav class="navbar navbar-default navbar-fixed-bottom navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Reported Police Shooting Map</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="#">Map</a></li>
+                <li class="active"><a href="about.html">About <span class="sr-only">(current)</span></a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+</nav>
+<div class="container-fluid">
+    <div class="jumbotron">
+        <h1>Hello,</h1>
+        <p>This is an interactive map of the police shootings data that was crowdsourced from <a href="http://regressing.deadspin.com/deadspin-police-shooting-database-update-were-still-go-1627414202">Deadspin</a> in the fall of 2014.</p>
+        <p>This interactive map displays shooting incidents as markers on the map, since many of the incidents occurred in the same city and are overlapping, clustering of the markers is enabled. Clicking on a mark will provide a basic summary of the incident and a link to the story.</p>
+        <p>Resources used in creating this map:</p>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="http://leafletjs.com">Leaflet.js</a> for constructing the map</li>
+            <li class="list-group-item"><a href="https://www.openstreetmap.org/">OpenStreetMap</a> for map data</li>
+            <li class="list-group-item"><a href="https://github.com/Leaflet/Leaflet.markercluster">Leaflet's Marker cluster plugin</a> for clustering/decluttering the data points.</li>
+            <li class="list-group-item">And of course <a href="https://jquery.com/">jQuery</a> and <a href="http://getbootstrap.com/">Bootstrap</a> for the foundation.</li>
+        </ul>
+        <footer class="footer">
+                <p style="text-align: right; font-size: 12pt;">Created by <a href="https://www.facebook.com/tristan.shi">Cechi Shi</a></p>
+            </div>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

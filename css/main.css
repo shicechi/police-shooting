@@ -1,1 +1,11 @@
-/* You'll probably want to add some styles here */
+/*Made to display full screen*/
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+html, body, #container {
+    height: 100%;
+    width: 100%;
+}
