@@ -15,7 +15,7 @@ var drawMap = function() {
 var getData = function(map) {
     // Execute an AJAX request to get the data in data/response.js
     $.ajax({
-        url: 'data/response.json',
+        url: './data/response.json',
         type: 'get',
         success: function(data) {
             customBuild(data, map);
@@ -23,7 +23,7 @@ var getData = function(map) {
     })
 };
 // Do something creative with the data here!
-var customBuild = function(data, map) {
+var customBuild = function(data, _map) {
     var markers = L.markerClusterGroup({showCoverageOnHover: false,
                                         spiderfyDistanceMultiplier: 4,
                                         maxClusterRadius:60});
@@ -38,6 +38,6 @@ var customBuild = function(data, map) {
         marker.bindPopup(popup);
         markers.addLayer(marker);
     });
-    map.addLayer(markers);
+    _map.addLayer(markers);
 };
 
