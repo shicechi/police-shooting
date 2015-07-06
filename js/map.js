@@ -18,12 +18,14 @@ var getData = function(map) {
         url: './data/response.json',
         type: 'get',
         success: function(data) {
+            console.log(data[0]);
             customBuild(data, map);
         }
     })
 };
 // Do something creative with the data here!
 var customBuild = function(data, _map) {
+    console.log(data[1]);
     var markers = L.markerClusterGroup({showCoverageOnHover: false,
                                         spiderfyDistanceMultiplier: 4,
                                         maxClusterRadius:60});
