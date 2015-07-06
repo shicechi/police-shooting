@@ -24,10 +24,6 @@ var getData = function(map) {
 };
 // Do something creative with the data here!
 var customBuild = function(data, map) {
-    console.log(data[0]);
-    console.log(data[1]);
-    console.log(data[3]);
-
     var markers = L.markerClusterGroup({showCoverageOnHover: false,
                                         spiderfyDistanceMultiplier: 4,
                                         maxClusterRadius:60});
