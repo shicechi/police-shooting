@@ -17,6 +17,7 @@ var getData = function(map) {
     $.ajax({
         url: './data/response.json',
         type: 'get',
+        dataType: 'json',
         success: function(data) {
             console.log(data[0]);
             customBuild(data, map);
