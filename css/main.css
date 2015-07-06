@@ -9,3 +9,8 @@ html, body, #container {
     height: 100%;
     width: 100%;
 }
+
+/*not overlapped by nav bar*/
+.leaflet-top .leaflet-control {
+    margin-top: 60px;
+}
